@@ -13,10 +13,3 @@ A PyTorch‑powered neural network that classifies 28×28 images of handwritten 
 - 📓 Available as both a standalone Python script (`main.py`) and Jupyter Notebook
 
 ---
-
-## 📦 Installation
-
-1. Clone this repository  
-   ```bash
-   git clone https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
-   cd <REPO_NAME>
