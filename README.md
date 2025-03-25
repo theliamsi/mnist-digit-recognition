@@ -1,15 +1,38 @@
-# Handwritten Digit Recognition
+# Handwritten Digit Recognition with Neural Networks
 
-A PyTorch‑powered neural network that classifies 28×28 images of handwritten digits (0–9) with ≥98% accuracy on MNIST — plus the ability to load your own drawn digits for real‑time inference.
+A simple PyTorch project that trains a Multilayer Perceptron (MLP) to recognize handwritten digits from the MNIST dataset. It includes training, evaluation, visualization of results, and an option to predict on external images.
 
----
+## Project Overview
 
-## 🚀 Features
+**Goal:** Classify 28×28 images of handwritten digits (0–9) with high accuracy.
 
-- ✅ Trains a fully connected MLP on MNIST  
-- 📊 Plots training loss, accuracy curves, and confusion matrix  
-- 🔍 Evaluates final model performance on a held‑out test set  
-- 🖼️ Predicts custom images (resize, threshold, normalize)  
-- 📓 Available as both a standalone Python script (`main.py`) and Jupyter Notebook
+### Approach
 
----
+- Use the MNIST dataset for training and testing  
+- Build an MLP model with fully‑connected layers and ReLU activations  
+- Train using the Adam optimizer and CrossEntropyLoss  
+- Evaluate performance using accuracy and a confusion matrix  
+- (Optional) Predict custom handwritten digit images  
+
+## Features
+
+### Data Loading & Preprocessing
+
+- Automatically downloads MNIST  
+- Normalizes images for consistent training  
+
+### Model Training & Evaluation
+
+- Prints training loss and accuracy per epoch  
+- Computes test accuracy and generates a confusion matrix  
+
+### Visualization
+
+- Plots training loss and accuracy curves with Matplotlib  
+- Displays a confusion matrix for class‑wise performance  
+
+### External Image Prediction (Optional)
+
+- Loads and preprocesses custom digit images  
+- Outputs predicted digit after running inference with the trained model  
+
